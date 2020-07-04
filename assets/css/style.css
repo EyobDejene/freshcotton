@@ -99,6 +99,11 @@ header nav ul li a{
     font-size: 12px;
 }
 
+header nav ul li:hover a{
+    color:#00a369;
+    border-bottom:1px solid #00a369;
+}
+
 header .cart{
     display: flex;
     align-items: center;
