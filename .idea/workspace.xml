@@ -38,17 +38,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="3744" />
+          <entry key="css" value="4905" />
           <entry key="gitignore" value="13" />
-          <entry key="html" value="1978" />
-          <entry key="js" value="2612" />
+          <entry key="html" value="2100" />
+          <entry key="js" value="3171" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="3744" />
-          <entry key="HTML" value="1978" />
-          <entry key="JavaScript" value="2612" />
+          <entry key="CSS" value="4905" />
+          <entry key="HTML" value="2100" />
+          <entry key="JavaScript" value="3171" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
@@ -59,17 +59,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+            <state relative-caret-position="242">
+              <caret line="269" column="10" selection-start-line="269" selection-start-column="10" selection-end-line="269" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="621" column="19" selection-start-line="621" selection-start-column="8" selection-end-line="621" selection-end-column="19" />
+            <state relative-caret-position="179">
+              <caret line="705" column="24" lean-forward="true" selection-start-line="705" selection-start-column="24" selection-end-line="705" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -83,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/freshcotton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="131" column="35" lean-forward="true" selection-start-line="131" selection-start-column="35" selection-end-line="131" selection-end-column="35" />
+            <state relative-caret-position="274">
+              <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -105,17 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>header nav</find>
-      <find>transfo</find>
-      <find>slider</find>
-      <find>product</find>
-      <find>&quot;\f104&quot;</find>
-      <find>em</find>
-      <find>next</find>
-      <find>cart</find>
-      <find>hr</find>
-      <find>hover</find>
-      <find>container</find>
       <find>https://use.fontawesome.com/releases/v5.13.0/css/all.css</find>
       <find>.product .thumbs .item img</find>
       <find>flex</find>
@@ -123,14 +112,29 @@
       <find>.dropdown-menu li .notify</find>
       <find>push</find>
       <find>thumb</find>
-      <find>only screen and (max-width: 1185px)</find>
       <find>not-vi</find>
       <find>lightbox</find>
-      <find>dropdown-menu</find>
       <find>not-v</find>
       <find>.product .thumbs .item</find>
-      <find>.product .thumbs</find>
       <find>close</find>
+      <find>closeBtn</find>
+      <find>next</find>
+      <find>cartCont</find>
+      <find>mobile</find>
+      <find>cart</find>
+      <find>.headerMenu-mobile ul li</find>
+      <find>dropdown-menu</find>
+      <find>mobileMenu</find>
+      <find>favp</find>
+      <find>.container</find>
+      <find>.product .thumbs</find>
+      <find>slider</find>
+      <find>fluid</find>
+      <find>overf</find>
+      <find>only screen and (max-width: 1185px)</find>
+      <find>.headerMenu-mobile .container</find>
+      <find>container</find>
+      <find>favori</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,8 +145,8 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/assets/js/freshcotton.js" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/assets/js/freshcotton.js" />
       </list>
     </option>
   </component>
@@ -230,12 +234,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593774494257</updated>
-      <workItem from="1593774497939" duration="32306000" />
+      <workItem from="1593774497939" duration="39815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32306000" />
+    <option name="totallyTimeSpent" value="39815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -289,24 +293,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="705" column="24" lean-forward="true" selection-start-line="705" selection-start-column="24" selection-end-line="705" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+        <state relative-caret-position="242">
+          <caret line="269" column="10" selection-start-line="269" selection-start-column="10" selection-end-line="269" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/freshcotton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="131" column="35" lean-forward="true" selection-start-line="131" selection-start-column="35" selection-end-line="131" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="621" column="19" selection-start-line="621" selection-start-column="8" selection-end-line="621" selection-end-column="19" />
+        <state relative-caret-position="274">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
         </state>
       </provider>
     </entry>

@@ -1,3 +1,10 @@
+/**
+Author: Eyob Westerink 2020
+Subject: Freshcotton intake
+ */
+
+
+/** default settings **/
 *,html{
     padding:0;
     margin:0;
@@ -20,6 +27,36 @@ body{
 }
 
 
+h1{
+    font-weight: 100;
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 1em;
+    font-family: "Karla", sans-serif;
+}
+
+strong{
+    font-size: 1.4em;
+    margin-bottom: .5em;
+    display: inline-block;
+}
+
+hr {
+    width: 100%;
+    border-color: #e7e8e8;
+    opacity: 0.1;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+/** end default settings **/
+
+/** remove select color **/
+button:focus,ul li:focus{
+    outline: none;
+}
+
+
+
 /**
 Start Header menu
  */
@@ -34,7 +71,7 @@ header{
 }
 
 header nav{
-    width: 90%;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;
@@ -70,6 +107,12 @@ header .cart{
 
 }
 
+header .cartcontainer{
+    height: auto;
+    width: auto;
+    position: relative;
+}
+
 header .cartcontainer img{
     vertical-align: middle;
     display: block;
@@ -78,8 +121,8 @@ header .cartcontainer img{
 
 header .cart .bubble{
     position: absolute;
-    top: 1.3rem;
-    right: 1.4rem;
+    top: 0.6rem;
+    left: .8rem;
     min-width: 1.5em;
     height: 1.5em;
     line-height: 1.5em;
@@ -119,13 +162,15 @@ img{
 
 
 .container{
-    width: 90%;
+    width: 100%;
     display: grid;
     margin: auto;
-    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: 3fr 2.5fr .8fr;
     grid-gap: 2rem;
-    padding-top: 5rem;
+    padding: 2rem;
     height: 30rem;
+    margin-top: 3rem;
 }
 
 /** end wrap setting **/
@@ -144,14 +189,7 @@ img{
 
 .slider{
     width: 100%;
-    height:30%;
-    /*background-color: gold;*/
-    /*display:grid;*/
-    /*grid-gap: 0rem;*/
-    /*grid-template-columns: repeat(auto-fill, minmax(33.33%, 2fr));*/
-    /*grid-auto-rows: minmax(auto, auto);*/
-    overflow: hidden;
-
+    height:auto;
 }
 
 .slider li i{
@@ -169,31 +207,22 @@ img{
 .splide__arrow--next,
 .splide__arrow--prev{
     color: white;
-    font-size: 40px !Important;
+    font-size: 30px !Important;
     background-color: transparent!important;
-    font-style: normal;
-    font-weight: normal;
-
-    font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
 }
 
-.splide__arrow--next:before{
-    content: "\f35b";
+.splide__arrow--next{
+    right:0rem!important;
 }
 
-.splide__arrow--prev:before{
-    content: "\f35b";
-}
-
-.splide__arrow--next svg,
-.splide__arrow--prev svg{
-    display: none;
+.splide__arrow--prev{
+    left:0rem!important;
 }
 
 
-/** end slider**/
-
-
+.splide__slide:hover .fa-expand{
+    display: block!important;
+}
 
 .slider .splide__slide img{
     width: 100%;
@@ -201,13 +230,23 @@ img{
     object-fit: cover;
 }
 
+
+/** end slider**/
+
+.product{
+    width: 100%;
+    height: auto;
+}
+
+/**
+thumbnails
+ */
 .product .thumbs{
     width: 100%;
     display: grid;
     margin: auto;
     grid-gap: 0.5rem;
-    /* grid-auto-rows: minmax(auto, auto); */
-    grid-template-columns: repeat(auto-fill, minmax(4.5rem, 6fr));
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 6fr));
     padding-top: 3rem;
 }
 
@@ -230,26 +269,11 @@ img{
     opacity: 0.7;
 }
 
+/** end thumbnails **/
 
-.product{
-    width: 100%;
-    height: auto;
-}
 
-h1{
-    font-weight: 100;
-    font-size: 1.5em;
-    margin: 0;
-    margin-bottom: 1em;
-    font-family: "Karla", sans-serif;
-}
 
-strong{
-    font-size: 1.4em;
-    margin-bottom: .5em;
-    display: inline-block;
-}
-
+/** product section information**/
 .product p{
     color: #999;
     margin-top: .5em;
@@ -267,7 +291,6 @@ strong{
     margin-bottom: 2rem;
 }
 
-
 .product-detail .size{
     display: flex;
     width: 100%;
@@ -278,6 +301,8 @@ strong{
     margin-bottom: 1rem;
 }
 
+
+/** product size **/
 .product-detail .mysize{
     display: grid;
     width: 100%;
@@ -376,10 +401,20 @@ strong{
     color: #00a369;
 }
 
+
+/** end product size **/
+
+
 .not-visible{
     display: none !important;
 }
+.push{
+    margin-left: auto;
+}
 
+
+
+/** add to cart **/
 .add{
     width: 100%;
     display: flex;
@@ -409,6 +444,33 @@ strong{
     background-color: #007a4a;
 }
 
+/** add to cart **/
+
+/**added to cart effects */
+.added{
+    background-color:#00a369!important;
+}
+
+.scale{
+    animation: scaling .5s alternate;
+    animation-iteration-count: 1;
+}
+
+@keyframes scaling {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+
+
+/** add to whislist **/
 .favorite{
     display: flex;
     justify-content: flex-end;
@@ -418,6 +480,7 @@ strong{
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    font-size: 20px;
 }
 
 .favorite:hover{
@@ -429,18 +492,10 @@ strong{
     width: 100%;
 }
 
-.push{
-    margin-left: auto;
-}
+/** end add to wishlist  **/
 
-hr {
-    width: 100%;
-    border-color: #e7e8e8;
-    opacity: 0.1;
-    margin-top: 1rem;
-    margin-bottom: -1rem;
-}
 
+/** start accordion **/
 .accor{
     text-transform: uppercase;
     font-weight: 600;
@@ -462,6 +517,8 @@ hr {
     max-width: 100%;
     height: auto;
 }
+
+/** end  accordion **/
 
 
 .link{
@@ -486,34 +543,10 @@ hr {
 }
 
 
-/**
-added to cart
- */
-.added{
-    background-color:#00a369!important;
-}
-
-.scale{
-    animation: scaling .5s alternate;
-    animation-iteration-count: 1;
-}
-
-@keyframes scaling {
-    0% {
-        transform: scale(1.0);
-    }
-    50% {
-        transform: scale(1.5);
-    }
-    100% {
-        transform: scale(1.0);
-    }
-}
 
 
-/**
-lightbox
- */
+
+/** start lightbox **/
 
 .lightbox{
     position: fixed;
@@ -557,25 +590,76 @@ lightbox
     width: auto;
     height: 100%;
 }
+/** end lightbox **/
 
-/** remove select color **/
-button:focus,ul li:focus{
-    outline: none;
+
+/** start mobile menu **/
+.mobileMenu{
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    height: 100%;
+    padding:.8rem;
+    margin-right: 0.2rem;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    width: 4rem;
 }
 
-/**
-breaks
- */
+.headerMenu-mobile{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    position: absolute;
+    margin-top: 3rem;
+    overflow-y: scroll;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
 
+.headerMenu-mobile .container{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 9rem;
+}
+
+.headerMenu-mobile ul{
+    display: grid;
+    width: 100%;
+
+}
+
+.headerMenu-mobile ul li{
+    width: 100%;
+    padding: 1rem 0rem;
+    background-color: #fff;
+    margin: 0;
+    border-bottom:.03rem solid rgb(219, 219, 219,0.5);
+}
+
+.headerMenu-mobile ul li:hover a{
+    font-weight: 600;
+}
+
+/** end  mobile menu **/
+
+
+
+
+/** breaks points **/
 @media only screen and (max-width: 1185px) {
     .container{
-        width: 90%;
-        display: grid;
-        margin: auto;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
-        padding-top: 5rem;
-        height: 30rem;
+        padding: 1rem;
+        margin-top: 2rem!important;
     }
 
 
@@ -590,8 +674,21 @@ breaks
         padding-top: 3rem;
     }
 
-    header nav{
+    header .headerMenu-desktop{
         display: none;
+    }
+
+    header #header-logo{
+        width: 10rem;
+    }
+
+
+    header .cart{
+
+        padding-right: 1rem;
+    }
+    .mobileMenu{
+        display: block!important;
     }
 
 }
@@ -599,24 +696,9 @@ breaks
 
 @media only screen and (max-width: 600px) {
 
-    .slider{
-        height: 40%;
-    }
-    .container{
-        padding-top: 2rem;
-    }
-
-
-    .product .thumbs {
-        grid-gap: 1rem;
-        grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
-        padding-top: 3rem;
-    }
-
     .splide__arrow{
-        display: none!important;
+        /*display: none!important;*/
     }
-
 
     .lightbox .center .closeBtn{
         position: absolute;
@@ -625,10 +707,15 @@ breaks
         color: #ffffff;
         font-size: 1.4rem;
     }
-    /*.lightbox .imgHolder img{*/
-        /*width: 100%;*/
-        /*height: auto;*/
-    /*}*/
+
+    header #header-logo{
+        width: 9rem!important;
+    }
+
+    .thumbnails{
+        display: none;
+    }
+
 }
 
 

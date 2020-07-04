@@ -1,3 +1,7 @@
+/**
+ * Author Eyob Westerink 2020
+ * Freshcotton intake
+ */
 
 
 /**
@@ -18,7 +22,6 @@ function toggleClass() {
   info[0].classList.toggle('open');
 }
 
-
 /**
  * Add to cart
  */
@@ -29,11 +32,17 @@ addBtn.addEventListener('click', addToCart);
 function addToCart() {
   let cart = document.querySelector('.bubble');
   cart.classList.add('scale');
-  cart.innerHTML = '1';
-  this.innerHTML = "TOEGEVOEGD AAN JE WINKELWAGEN";
+  let value = parseInt(cart.innerHTML);
+  console.log(value);
+  value = value+=1;
+  cart.innerHTML = value;
+  this.innerHTML = 'TOEGEVOEGD AAN JE WINKELWAGEN';
   this.classList.add('added');
-}
+  setTimeout(function() {
+    cart.classList.remove('scale');
+  },500);
 
+}
 
 /**
  * Show all sizes in dropdown menu
@@ -41,11 +50,10 @@ function addToCart() {
 let dropdownBtn = document.querySelector('.dropdown');
 let dropdownMenu = document.querySelector('.dropdown-menu');
 dropdownBtn.addEventListener('click', dropdownSizes);
+
 function dropdownSizes() {
   dropdownMenu.classList.toggle('not-visible');
 }
-
-
 
 /**
  * Replace size selected size
@@ -64,56 +72,56 @@ for (let i = 0; i < sizes.length; i++) {
   });
 }
 
-
-
-
 /**
  * Thumbnail slider using splidejs will slide to selected image and will
  * diplay this in the center of the hero slider
  */
-document.addEventListener( 'DOMContentLoaded', function () {
-  var splide = new Splide( '#splide',{
-    rewind     : true,
-    pagination : false,
-    focus      : 'center',
-  } );
-  var images = document.querySelectorAll( '.js-thumbnails li' );
+document.addEventListener('DOMContentLoaded', function() {
+  var splide = new Splide('#splide', {
+    rewind: true,
+    pagination: false,
+    focus: 'center',
+    height: '30%',
+    breakpoints: {
+      '600': {
+        height: '10rem',
+      },
+    },
+  });
+  var images = document.querySelectorAll('.js-thumbnails li');
 
   var activeImage;
   var activeClass = 'is-active';
 
-  for ( let i = 0, len = images.length; i < len; i++ ) {
-    var image = images[ i ];
+  for (let i = 0, len = images.length; i < len; i++) {
+    var image = images[i];
 
-    splide.on( 'click', function () {
-      if ( activeImage !== image ) {
-        splide.go( i );
-      }else{
-        splide.go( i );
+    splide.on('click', function() {
+      if (activeImage !== image) {
+        splide.go(i);
+      } else {
+        splide.go(i);
       }
 
-    }, image );
+    }, image);
   }
 
-  splide.on( 'mounted move', function ( newIndex ) {
+  splide.on('mounted move', function(newIndex) {
     // newIndex will be undefined through the "mounted" event.
-    var image = images[ newIndex !== undefined ? newIndex : splide.index ];
+    var image = images[newIndex !== undefined ? newIndex : splide.index];
 
-    if ( image && activeImage !== image ) {
-      if ( activeImage ) {
-        activeImage.classList.remove( activeClass );
+    if (image && activeImage !== image) {
+      if (activeImage) {
+        activeImage.classList.remove(activeClass);
       }
 
-      image.classList.add( activeClass );
+      image.classList.add(activeClass);
       activeImage = image;
     }
-  } );
+  });
 
   splide.mount();
-} );
-
-
-
+});
 
 /**
  * Lightbox functions
@@ -121,16 +129,17 @@ document.addEventListener( 'DOMContentLoaded', function () {
 // open lightbox
 let slideItems = document.querySelectorAll('.splide__slide');
 for (let i = 0; i < slideItems.length; i++) {
-  slideItems[i].addEventListener("click",openLightbox);
+  slideItems[i].addEventListener('click', openLightbox);
 }
-function openLightbox(){
+
+function openLightbox() {
   // get image with target
   let imgTarget = this.querySelectorAll('img');
   let imgSource = imgTarget[0].getAttribute('src');
   let lighboxImgSource = document.querySelector('.lightbox img');
   // replace target image with selected item
   lighboxImgSource.src = imgSource;
-  console.log(imgSource)
+  console.log(imgSource);
   // open the lightbox
   let lightbox = document.querySelector('.lightbox');
   lightbox.classList.remove('not-visible');
@@ -138,10 +147,43 @@ function openLightbox(){
 
 // Close lightbox
 let closeBtn = document.querySelector('.closeBtn');
-closeBtn.addEventListener("click",closeLightbox);
+closeBtn.addEventListener('click', closeLightbox);
 
 // this function will close the lightbox
-function closeLightbox(){
+function closeLightbox() {
   let lightbox = document.querySelector('.lightbox');
   lightbox.classList.add('not-visible');
 }
+
+/**
+ * Mobile mobile functions
+ */
+
+let menuMobile = document.querySelector('.mobileMenu');
+menuMobile.addEventListener('click', mobileMenu);
+
+function mobileMenu() {
+  let menu = document.querySelector('.headerMenu-mobile');
+  let menuIcon = document.querySelector('.mobileMenu i');
+  menuIcon.classList.toggle('fa-bars');
+  menuIcon.classList.toggle('fa-times');
+  menu.classList.toggle('not-visible');
+}
+
+/**
+ * Favorite/add to wishlist product
+ */
+let favorite = document.querySelector('.favorite');
+favorite.addEventListener('click', favoriteProduct);
+
+function favoriteProduct() {
+  let favorateBtn = document.querySelector('.favorite');
+  let favorateIcon = document.querySelector('.favorite i');
+  favorateIcon.classList.toggle('fa-heart-o');
+  favorateIcon.classList.toggle('fa-heart');
+  favorateBtn.classList.toggle('addWishlist');
+}
+
+
+
+
