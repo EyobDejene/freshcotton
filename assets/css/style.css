@@ -475,7 +475,7 @@ thumbnails
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
-    background-color: #edeeee;
+    background-color: rgba(229, 229, 229, 0.3);
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
@@ -484,7 +484,7 @@ thumbnails
 }
 
 .favorite:hover{
-    background-color: #c5c6c6;
+    background-color: rgba(229, 229, 229, 0.7);
 }
 
 .favorite img{
