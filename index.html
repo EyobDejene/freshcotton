@@ -46,6 +46,15 @@
 </header>
 
 <main>
+    <div class="lightbox not-visible">
+        <div class="center">
+            <div class="imgHolder">
+            <div class="closeBtn"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <img src="https://cdn.webshopapp.com/shops/260322/files/323883145/1082x1442x2/daily-paper-daily-paper-rejean-jacket-light-blue-2.jpg" alt="img1">
+            </div>
+        </div>
+    </div>
+
     <div class="fluid">
         <div class="slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
             <div class="carrousel">
@@ -81,26 +90,64 @@
                 Of sameday delivery bij orders geplaatst voor 12:00 (€6,95, alleen in NL)
             </p>
 
-            <div class="thumbs">
-                <div class="item"><img src="https://cdn.webshopapp.com/shops/260322/files/323883145/156x200x2/daily-paper-daily-paper-rejean-jacket-light-blue-2.jpg" alt="Daily Paper Daily Paper Rejean Jacket Light Blue 20S1AC53-02-2"></div>
-                <div class="item"><img
-                        src="https://cdn.webshopapp.com/shops/260322/files/323883164/156x200x2/daily-paper-daily-paper-rejean-jacket-light-blue-2.jpg" alt="Daily Paper Daily Paper Rejean Jacket Light Blue 20S1AC53-02-2"></div>
-                <div class="item"><img
-                        src="https://cdn.webshopapp.com/shops/260322/files/323883151/156x200x2/daily-paper-daily-paper-rejean-jacket-light-blue-2.jpg"alt="Daily Paper Daily Paper Rejean Jacket Light Blue 20S1AC53-02-2"> </div>
-                <div class="item"><img
-                        src="https://cdn.webshopapp.com/shops/260322/files/323883156/156x200x2/daily-paper-daily-paper-rejean-jacket-light-blue-2.jpg"alt="Daily Paper Daily Paper Rejean Jacket Light Blue 20S1AC53-02-2"> </div>
-                <div class="item"><img
-                        src="https://cdn.webshopapp.com/shops/260322/files/323883153/156x200x2/daily-paper-daily-paper-rejean-jacket-light-blue-2.jpg"alt="Daily Paper Daily Paper Rejean Jacket Light Blue 20S1AC53-02-2"> </div>
-                <div class="item"><img
-                        src="https://cdn.webshopapp.com/shops/260322/files/323883160/156x200x2/daily-paper-daily-paper-rejean-jacket-light-blue-2.jpg"alt="Daily Paper Daily Paper Rejean Jacket Light Blue 20S1AC53-02-2"> </div>
+            <div class="thumbnails js-thumbnails">
+                <ul class="thumbs thumbnails__list">
+                    <li class="thumbnails__item"role="button" tabindex="0"><div class="item"><img
+                            src="https://cdn.webshopapp.com/shops/260322/files/323883145/156x200x2/daily-paper-daily-paper-rejean-jacket-light-blue-2.jpg" alt="Daily Paper Daily Paper Rejean Jacket Light Blue 20S1AC53-02-2"></div></li>
+                    <li class="thumbnails__item"role="button" tabindex="0"><div class="item"><img
+                            src="https://cdn.webshopapp.com/shops/260322/files/323883164/156x200x2/daily-paper-daily-paper-rejean-jacket-light-blue-2.jpg" alt="Daily Paper Daily Paper Rejean Jacket Light Blue 20S1AC53-02-2"></div></li>
+                    <li class="thumbnails__item"role="button" tabindex="0"><div class="item"><img
+                            src="https://cdn.webshopapp.com/shops/260322/files/323883151/156x200x2/daily-paper-daily-paper-rejean-jacket-light-blue-2.jpg"alt="Daily Paper Daily Paper Rejean Jacket Light Blue 20S1AC53-02-2"> </div></li>
+                    <li class="thumbnails__item"role="button" tabindex="0"><div class="item"><img
+                            src="https://cdn.webshopapp.com/shops/260322/files/323883156/156x200x2/daily-paper-daily-paper-rejean-jacket-light-blue-2.jpg"alt="Daily Paper Daily Paper Rejean Jacket Light Blue 20S1AC53-02-2"> </div></li>
+                    <li class="thumbnails__item"role="button" tabindex="0"><div class="item"><img
+                            src="https://cdn.webshopapp.com/shops/260322/files/323883153/156x200x2/daily-paper-daily-paper-rejean-jacket-light-blue-2.jpg"alt="Daily Paper Daily Paper Rejean Jacket Light Blue 20S1AC53-02-2"> </div></li>
+                    <li class="thumbnails__item"role="button" tabindex="0"><div class="item"><img
+                            src="https://cdn.webshopapp.com/shops/260322/files/323883160/156x200x2/daily-paper-daily-paper-rejean-jacket-light-blue-2.jpg"alt="Daily Paper Daily Paper Rejean Jacket Light Blue 20S1AC53-02-2"> </div></li>
+                </ul>
             </div>
+
+
         </div>
         <div class="product-detail">
             <div class="size">
                 <span>maat</span>
                 <span class="mysize">Wat is mijn maat?</span>
             </div>
-            <button class="dropdown">XSmall<img class="img-fluid" src="https://cdn.webshopapp.com/shops/260322/themes/141170/assets/chevron-arrow-down.svg?2020063017464920200615134248" alt="select size"></button>
+            <button class="dropdown"><span class="selected">XSmall</span><img class="img-fluid" src="https://cdn.webshopapp.com/shops/260322/themes/141170/assets/chevron-arrow-down.svg?2020063017464920200615134248" alt="select size"></button>
+            <div class="menuWrap">
+            <ul class="dropdown-menu not-visible">
+                <li>
+                    <a href="#">
+                        <span class="sizeName" data-size="XSmall">XSmall</span>
+                        <span class="only-left">Nog  <b>2</b> op voorraad</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="sizeName" data-size="Small">Small</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="sizeName" data-size="Medium">Medium</span>
+                        <span class="only-left">Nog  <b>1</b> op voorraad</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="out">
+                        <span class="out-of-stock">Large</span>
+                        <span class="only-left notify"><img src="https://cdn.webshopapp.com/shops/260322/themes/141170/assets/mail.svg?2020063017464920200615134248">Notify me when in stock.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="sizeName" data-size="Xlarge">Xlarge</span>
+                        <span class="only-left">Nog  <b>1</b> op voorraad</span>
+                    </a>
+                </li>
+            </ul>
+            </div>
             <p>Model is 182 cm lang, weegt 75 kg en draagt maat medium.</p>
 
             <div class="add">
@@ -160,6 +207,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </main>
 
@@ -167,13 +215,13 @@
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 <script src="assets/js/freshcotton.js"></script>
 <script>
-  document.addEventListener( 'DOMContentLoaded', function () {
-    new Splide( '.splide' ,{
-      pagination : false
-    }).mount();
-
-
-  } );
+  // document.addEventListener( 'DOMContentLoaded', function () {
+  //   new Splide( '#splide' ,{
+  //     rewind: true,
+  //     pagination : false,
+  //   }).mount();
+  //
+  // } );
 </script>
 </body>
 </html>
