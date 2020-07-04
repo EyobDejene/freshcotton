@@ -659,12 +659,12 @@ thumbnails
     .container{
         grid-template-columns: repeat(1, 1fr);
         padding: 1rem;
-        margin-top: 2rem!important;
+        margin-top: 1rem!important;
     }
 
 
     .product-detail{
-        padding-top: 2rem;
+        padding-top: 0rem;
     }
 
 
